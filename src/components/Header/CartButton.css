@@ -1,0 +1,27 @@
+.button {
+@apply cursor-pointer bg-[#4d1601] text-white flex justify-around items-center font-bold font-sans border-none pt-3 pb-3 pr-12 pl-12 rounded-3xl
+}
+
+.button:hover {
+@apply bg-black
+}
+
+.button:active {
+@apply bg-black
+}
+
+.icon {
+@apply w-5 h-5 mr-2
+}
+
+.badge {
+@apply bg-[#b94517] ml-4 font-bold pt-1 pb-1 pr-4 pl-4 rounded-3xl
+}
+
+.button:hover .badge {
+@apply bg-orange-800
+}
+
+.button:active .badge {
+@apply bg-orange-800
+}

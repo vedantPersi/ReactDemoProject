@@ -1,0 +1,15 @@
+.form{
+@apply text-right
+}
+
+.form button{
+@apply cursor-pointer bg-orange-900 text-white font-bold font-sans pt-1 pb-1 pr-4 pl-4 rounded-3xl border-solid
+}
+
+.form button:hover{
+@apply  bg-yellow-900 border-yellow-900
+}
+
+.form button:active{
+@apply bg-yellow-900 border-yellow-900
+}

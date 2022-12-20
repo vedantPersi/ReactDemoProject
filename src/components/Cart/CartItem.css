@@ -1,0 +1,35 @@
+.cart-item {
+  @apply flex justify-between items-center
+}
+
+.cart-item h2 {
+  @apply .cart-item h2
+}
+
+.summary {
+  @apply w-40 flex justify-between items-center
+}
+
+.price {
+  @apply font-bold text-orange-900
+}
+
+.amount {
+  @apply font-bold rounded-md text-gray-800 border-solid border-black
+}
+
+.actions {
+  @apply flex flex-col
+}
+
+.cart-item button {
+  @apply font-bold text-xl text-orange-900 w-12 text-center rounded-md bg-transparent cursor-pointer ml-4 m-1
+}
+
+.cart-item button:hover{
+  @apply bg-orange-900 text-white
+}
+
+.cart-item button:active{
+  @apply bg-orange-900 text-white
+}

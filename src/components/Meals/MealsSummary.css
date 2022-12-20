@@ -1,0 +1,7 @@
+.summary {
+@apply text-center m-auto -mt-40 relative bg-gray-800 text-white p-4 w-11/12 shadow-summary-box max-w-2xl
+}
+
+.summary h2 {
+@apply text-3xl mt-0
+}
