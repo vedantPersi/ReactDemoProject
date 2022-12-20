@@ -1,18 +1,20 @@
-import React, {useRef, useState} from 'react';
-import Input from '../../CommonComponents/Input';
+import React, { useRef, useState } from "react";
+import Input from "../../CommonComponents/Input";
 
 // interface MealItemFormProps {
 //   id: string;
 // }
 
-const MealItemForm = (props:any) => {
-  const [amountIsValid, setAmountIsValid] = useState(true);
-  const amountInputRef:any = useRef();
+const MealItemForm = (props: any) => {
+  const [amountIsValid, setAmountIsValid] =
+    useState(true);
+  const amountInputRef: any = useRef();
 
-  const submitHandler = (event:any) => {
+  const submitHandler = (event: any) => {
     event.preventDefault();
 
-    const enteredAmount = amountInputRef.current.value;
+    const enteredAmount =
+      amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
 
     if (
@@ -28,23 +30,30 @@ const MealItemForm = (props:any) => {
   };
 
   return (
-    <form className="form" onSubmit={submitHandler}>
+    <form
+      className="form"
+      onSubmit={submitHandler}
+    >
       <Input
         ref={amountInputRef}
-        label='Amount'
+        label="Amount"
         input={{
-          id: 'amount_' + props.id,
-          type: 'number',
-          min: '1',
-          max: '5',
-          step: '1',
-          defaultValue: '1',
+          id: "amount_" + props.id,
+          type: "number",
+          min: "1",
+          max: "5",
+          step: "1",
+          defaultValue: "1",
         }}
       />
-      <button className="cursor-pointer bg-orange-900 text-white font-bold">+ Add</button>
-      {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      <button className="cursor-pointer bg-orange-900 text-white font-bold w-24 h-15">
+        + Add
+      </button>
+      {!amountIsValid && (
+        <p>Please enter a valid amount (1-5).</p>
+      )}
     </form>
   );
-}
+};
 
 export default MealItemForm;

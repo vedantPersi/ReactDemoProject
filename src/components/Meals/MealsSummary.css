@@ -1,7 +1,7 @@
 .summary {
-@apply text-center m-auto -mt-40 relative bg-gray-800 text-white p-4 w-11/12 shadow-summary-box max-w-2xl
+  @apply text-center m-auto -mt-20 mb-10 relative bg-[#383838] text-white p-6 w-11/12 shadow-summary-box max-w-[700px] rounded-[20px];
 }
 
 .summary h2 {
-@apply text-3xl mt-0
+  @apply text-4xl mb-5 font-bold;
 }
