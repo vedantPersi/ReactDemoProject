@@ -19,7 +19,9 @@ function App() {
   return (
     <CartProvider>
       {showCart && (
-        <Cart onCloseCart={hideCartHandler} />
+        <div className="">
+          <Cart onCloseCart={hideCartHandler} />
+        </div>
       )}
       <Header onShowCart={showCartHandler} />
       <main className="bg-[#3F3F3F] h-[100vh]">
