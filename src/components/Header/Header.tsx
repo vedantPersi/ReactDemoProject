@@ -9,7 +9,7 @@ type propFunction = {
 const Header = (props:propFunction) => {
   return(
     <Fragment>
-        <header className="header">
+        <header data-testid="header-text" className="header">
             <h1>React Meals</h1>
             <CartButton onClick={props.onShowCart}></CartButton>
         </header>
